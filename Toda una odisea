@@ -4,22 +4,134 @@
 
 <head>
     <meta charset="UTF-8">
+
     <title>Toda una Odisea</title>
+
+    <style>
+
+        /* =========================
+           SELECTORES
+           ========================= */
+
+        /* Selector body: cambia el fondo y el color general del texto */
+        body {
+            background-color: #eef7fa;
+            color: #243746;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Selector header: cambia el fondo y el color del texto */
+        header {
+            background-color: #164e63;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        /* Selector h1 */
+        h1 {
+            font-size: 45px;
+        }
+
+        /* Selector section */
+        section {
+            background-color: white;
+            margin: 25px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* Selector article */
+        article {
+            background-color: #e5f3f7;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        /* Selector aside */
+        aside {
+            background-color: #fff3d6;
+            color: #59420c;
+            margin: 25px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* Selector footer */
+        footer {
+            background-color: #123447;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+
+        /* =========================
+           CLASES
+           ========================= */
+
+        /* Clase para textos grandes */
+        .texto-grande {
+            font-size: 22px;
+        }
+
+        /* Clase para destacar información */
+        .destacado {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Clase para los temas */
+        .temas {
+            font-size: 19px;
+        }
+
+
+        /* =========================
+           ID
+           ========================= */
+
+        /* ID para cambiar el tipo de letra */
+        #titulo-odisea {
+            font-family: Georgia, serif;
+        }
+
+        /* ID para cambiar el tipo de letra de la descripción */
+        #descripcion {
+            font-family: "Trebuchet MS", sans-serif;
+        }
+
+        /* ID para cambiar el tipo de letra del pie de página */
+        #informacion-personal {
+            font-family: Georgia, serif;
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-    <!-- Encabezado -->
+    <!-- ENCABEZADO -->
     <header>
-        <h1>Toda una Odisea</h1>
-        <p>Un viaje por la literatura y la mitología griega</p>
+
+        <h1 id="titulo-odisea">Toda una Odisea</h1>
+
+        <p class="texto-grande">
+            Un viaje por la literatura y la mitología griega
+        </p>
+
     </header>
 
-    <!-- Descripción del sitio -->
+
+    <!-- DESCRIPCIÓN -->
     <section>
+
         <h2>Descripción del sitio web</h2>
 
-        <p>
+        <p id="descripcion" class="texto-grande">
             Bienvenidos a "Toda una Odisea", un sitio web dedicado a conocer
             la obra La Odisea, atribuida al poeta griego Homero.
             En este sitio conoceremos su historia, sus personajes,
@@ -32,9 +144,11 @@
             Durante su recorrido debe enfrentar diferentes obstáculos y
             personajes de la mitología griega.
         </p>
+
     </section>
 
-    <!-- Información sobre la obra -->
+
+    <!-- INFORMACIÓN SOBRE LA OBRA -->
     <section>
 
         <h2>La Odisea</h2>
@@ -43,32 +157,39 @@
 
             <h3>¿De qué trata?</h3>
 
-            <p>
+            <p class="destacado">
                 La Odisea es una obra de la literatura griega que narra
-                el viaje de Odiseo para regresar a Ítaca. Durante su viaje
-                enfrenta diferentes aventuras que ponen a prueba su
-                inteligencia, valentía y perseverancia.
+                el viaje de Odiseo para regresar a Ítaca.
+            </p>
+
+            <p>
+                Durante su viaje enfrenta diferentes aventuras que ponen
+                a prueba su inteligencia, valentía y perseverancia.
             </p>
 
         </article>
+
 
         <article>
 
             <h3>Personajes principales</h3>
 
-            <ul>
+            <ul class="temas">
+
                 <li>Odiseo</li>
                 <li>Penélope</li>
                 <li>Telémaco</li>
                 <li>Atenea</li>
                 <li>Poseidón</li>
+
             </ul>
 
         </article>
 
     </section>
 
-    <!-- Temas y subtemas -->
+
+    <!-- TEMAS -->
     <section>
 
         <h2>Temas y subtemas</h2>
@@ -78,27 +199,31 @@
             en nuestro sitio web:
         </p>
 
-        <ol>
+        <ol class="temas">
+
             <li>Historia de La Odisea</li>
             <li>Personajes principales</li>
             <li>El viaje de Odiseo</li>
             <li>Mitología griega</li>
             <li>Aventuras y obstáculos</li>
             <li>Importancia de la obra</li>
+
         </ol>
 
     </section>
 
-    <!-- Imagen -->
+
+    <!-- IMAGEN -->
     <section>
 
         <h2>Una representación de La Odisea</h2>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Odyssey_Coins.jpg/640px-Odyssey_Coins.jpg"
-             alt="Representación relacionada con La Odisea"
-             width="400">
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Odyssey_Coins.jpg/640px-Odyssey_Coins.jpg"
+            alt="Representación relacionada con La Odisea"
+            width="400">
 
-        <p>
+        <p class="texto-grande">
             La historia de Odiseo ha sido representada de diferentes
             maneras a lo largo de la historia y continúa siendo una
             obra importante de la literatura universal.
@@ -106,12 +231,13 @@
 
     </section>
 
-    <!-- Información adicional -->
+
+    <!-- INFORMACIÓN ADICIONAL -->
     <aside>
 
         <h2>Dato interesante</h2>
 
-        <p>
+        <p class="destacado">
             La Odisea es una de las obras más conocidas de la literatura
             griega antigua y está relacionada con la tradición de los
             poemas épicos.
@@ -119,8 +245,9 @@
 
     </aside>
 
-    <!-- Pie de página -->
-    <footer>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="informacion-personal">
 
         <h2>Información personal</h2>
 
